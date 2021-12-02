@@ -1,0 +1,20 @@
+{
+    "name": "dsec_warm_start",
+    "cuda": true,
+    "gpu": 0,
+    "subtype": "warm_start",
+    "save_dir": "saved",
+    "data_loader": {
+        "test": {
+            "args": {
+                "batch_size": 1,
+                "shuffle": false,
+                "sequence_length": 1,
+                "num_voxel_bins": 15
+            }
+        }
+    },
+    "test": {
+        "checkpoint": "checkpoints/dsec.tar"
+    }
+}

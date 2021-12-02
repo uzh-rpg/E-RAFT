@@ -1,0 +1,19 @@
+{
+    "name": "dsec_standard",
+    "cuda": true,
+    "gpu": 0,
+    "subtype": "standard",
+    "save_dir": "saved",
+    "data_loader": {
+        "test": {
+            "args": {
+                "batch_size": 1,
+                "shuffle": false,
+                "num_voxel_bins": 15
+            }
+        }
+    },
+    "test": {
+        "checkpoint": "checkpoints/dsec.tar"
+    }
+}

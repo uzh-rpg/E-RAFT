@@ -1,0 +1,35 @@
+{
+    "name": "mvsec_45Hz",
+    "cuda": true,
+    "gpu": 0,
+    "subtype": "warm_start",
+    "save_dir": "saved",
+    "data_loader": {
+        "test": {
+            "args": {
+                "batch_size": 1,
+                "shuffle": false,
+                "sequence_length": 1,
+                "num_voxel_bins": 5,
+                "align_to": "images",
+                "datasets": {
+                    "outdoor_day": [
+                        1
+                    ]
+                },
+                "filter": {
+                    "outdoor_day": {
+                        "1": "range(10167,10954)"
+                    }
+                },
+                "transforms": [
+                    "EventSequenceToVoxelGrid_Pytorch(num_bins=5, normalize=True, gpu=True)",
+                    "RandomCropping(crop_height=256, crop_width=256, fixed=True)"
+                ]
+            }
+        }
+    },
+    "test": {
+        "checkpoint": "checkpoints/mvsec_45.tar"
+    }
+}
