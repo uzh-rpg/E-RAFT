@@ -1,4 +1,11 @@
 # E-RAFT: Dense Optical Flow from Event Cameras
+
+<p align="center">
+  <a href="https://youtu.be/dN8fl7-XfNw">
+    <img src="http://rpg.ifi.uzh.ch/img/papers/3DV21_Gehrig_thumbnail_play.png" alt="E-RAFT" width="400"/>
+  </a>
+</p>
+
 This is the code for the paper **E-RAFT: Dense Optical Flow from Event Cameras** by Mathias Gehrig, Mario Millhäusler, Daniel Gehrig and [Davide Scaramuzza](http://rpg.ifi.uzh.ch/people_scaramuzza.html).
 
 You can find a pdf of the paper [here](https://dsec.ifi.uzh.ch/wp-content/uploads/2021/10/eraft_3dv.pdf).
