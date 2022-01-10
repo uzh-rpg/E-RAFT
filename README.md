@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://youtu.be/dN8fl7-XfNw">
-    <img src="http://rpg.ifi.uzh.ch/img/papers/3DV21_Gehrig_thumbnail_play.png" alt="E-RAFT" width="400"/>
+    <img src="http://rpg.ifi.uzh.ch/eraft/eraft_thumbnail_play.png" alt="E-RAFT" width="400"/>
   </a>
 </p>
 
