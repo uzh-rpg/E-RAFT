@@ -6,7 +6,7 @@
   </a>
 </p>
 
-This is the code for the paper **E-RAFT: Dense Optical Flow from Event Cameras** by Mathias Gehrig, Mario Millhäusler, Daniel Gehrig and [Davide Scaramuzza](http://rpg.ifi.uzh.ch/people_scaramuzza.html).
+This is the code for the paper **E-RAFT: Dense Optical Flow from Event Cameras** by [Mathias Gehrig](https://magehrig.github.io/), Mario Millhäusler, Daniel Gehrig and [Davide Scaramuzza](http://rpg.ifi.uzh.ch/people_scaramuzza.html).
 
 We also introduce DSEC-Flow ([download here](https://dsec.ifi.uzh.ch/dsec-datasets/download/)), the optical flow extension of the [DSEC](https://dsec.ifi.uzh.ch/) dataset. We are also hosting an automatic evaluation server and a [public benchmark](https://dsec.ifi.uzh.ch/uzh/dsec-flow-optical-flow-benchmark/)!
 
