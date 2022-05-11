@@ -122,7 +122,7 @@ class FlowVisualizerEvents(BaseVisualizer):
         crop = CenterCrop(256)
         events = crop(events)
         # Save
-        save_image(os.path.join(self.visu_path, name_events),events)
+        save_image(os.path.join(self.visu_path, name_events), events)
 
     def visualize_ground_truths(self, batch, batch_idx, epoch=None, data_aug=False):
         # Visualize Events
@@ -141,7 +141,7 @@ class FlowVisualizerEvents(BaseVisualizer):
         flow_gt = batch['flow'][batch_idx].clone()
         flow_gt[~batch['gt_valid_mask'][batch_idx].bool()] = 0.0
         self.flow_scaling = self.visualize_flow_colours(flow_gt, batch['idx'][batch_idx], epoch=epoch,
-                                                        data_aug=data_aug, is_gt=True, fix_scaling=None)
+                                                        data_aug=data_aug, is_gt=True, fix_scaling=None, suffix='_gt')
 
     def visualize_estimations(self, batch, batch_idx, epoch=None):
         # Visualize Flow Estimation
