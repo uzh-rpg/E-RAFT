@@ -269,7 +269,7 @@ class Sequence(Dataset):
     def load_flow(flowfile: Path):
         assert flowfile.exists()
         assert flowfile.suffix == '.png'
-        flow_16bit = imageio.imread(str(flowfile))
+        flow_16bit = imageio.imread(str(flowfile), format='PNG-FI')
         flow, valid2D = flow_16bit_to_float(flow_16bit)
         return flow, valid2D
 
